@@ -14,9 +14,13 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   background-color: #131112;
   width: 100vw;
   height: 100vh;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /** Nav Bar items */
@@ -98,4 +102,8 @@ body {
 .item-name {
   font-size: 1.8rem;
   word-wrap: normal;
+}
+
+.footer {
+  font-size: 2rem;
 }
