@@ -14,14 +14,39 @@
       rel="stylesheet"
     />
 
-    <title>Actividad I</title>
+    <script type="text/javascript" src="./index.js" defer></script>
   </head>
   <body>
+    <header class="nav-header">
+      <nav class="nav-bar">
+        <a href="/"><img class="nav-header-icon" src="./img/icon.svg" /></a>
+        <div>
+          <ul class="nav-header-links">
+            <li>
+              <a href="#" class="nav-header-link link-actividad-1"
+                >Actividad I</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-header-link link-actividad-2"
+                >Actividad II</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-header-link link-actividad-3"
+                >Actividad III</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="container">
       <div>
-        <header class="nav-bar">
-          <span class="nav-header">Recursos</span>
-        </header>
+        <div class="nav-title">
+          <canvas class="canvas-title"></canvas>
+          <!-- <span class="nav-header-title">Recursos</span> -->
+        </div>
         <div class="inner-container">
           <section class="item-section images">
             <span class="item-section-title">Imagenes</span>
@@ -210,6 +235,38 @@
           </section>
         </div>
       </div>
+      <form action="#" method="POST" class="subscribe-form">
+        <div class="form-item">
+          <p>Nombres:&nbsp;</p>
+          <input
+            class="form-input-text"
+            type="text"
+            name="name_input"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <p>Email:&nbsp;</p>
+          <input
+            type="email"
+            class="form-input-text"
+            name="email_input"
+            required
+          />
+        </div>
+        <p class="disclaimer">
+          Acepto recibir notificaciones sobre cambios en la pagina
+        </p>
+        <div>
+          <input
+            type="checkbox"
+            name="authorize"
+            id="authorize"
+            required
+          /><label for="authorize">&nbsp;Acepto</label>
+        </div>
+        <p><input type="submit" value="Guardar" class="form-submit-btn" /></p>
+      </form>
       <footer>
         <span class="footer">
           Sebastian Silva - Universidad Manuela Beltran - Diseño web</span
