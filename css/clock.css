@@ -1,0 +1,59 @@
+.section-clock {
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.clock-container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Fredoka', sans-serif;
+}
+
+/** Date section  */
+.clock-date {
+  display: flex;
+  font-size: 4rem;
+  letter-spacing: 0.05rem;
+  justify-content: center;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.clock-date-day {
+  font-weight: 600;
+  font-size: 5.7rem;
+}
+.clock-date-day::after {
+  /* position: absolute; */
+  z-index: 10;
+  content: '';
+  margin: 0rem 3rem;
+  border-right: 0.7rem solid #ed1f24;
+}
+
+.clock-date-numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock-date-dd-mm {
+  text-align: center;
+  /* letter-spacing: 0.2rem; */
+}
+
+/** Clock section  */
+
+.clock-time {
+  font-size: 20rem;
+  display: inline-flex;
+}

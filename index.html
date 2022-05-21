@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +12,19 @@
       rel="stylesheet"
     />
 
-    <script type="text/javascript" src="./index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/clock.css" />
+
+    <script type="text/javascript" src="./js/three.js" defer></script>
+    <script type="text/javascript" src="./js/index.js" defer></script>
+    <script type="text/javascript" src="./js/clock.js" defer></script>
   </head>
   <body>
     <header class="nav-header">
@@ -235,38 +245,55 @@
           </section>
         </div>
       </div>
-      <form action="#" method="POST" class="subscribe-form">
-        <div class="form-item">
-          <p>Nombres:&nbsp;</p>
-          <input
-            class="form-input-text"
-            type="text"
-            name="name_input"
-            required
-          />
+      <section class="form-canvas-section">
+        <form action="#" method="POST" class="subscribe-form">
+          <div class="form-item">
+            <p>Nombres:&nbsp;</p>
+            <input
+              class="form-input-text"
+              type="text"
+              name="name_input"
+              required
+            />
+          </div>
+          <div class="form-item">
+            <p>Email:&nbsp;</p>
+            <input
+              type="email"
+              class="form-input-text"
+              name="email_input"
+              required
+            />
+          </div>
+          <p class="disclaimer">
+            Acepto recibir notificaciones sobre cambios en la pagina
+          </p>
+          <div>
+            <input
+              type="checkbox"
+              name="authorize"
+              id="authorize"
+              required
+            /><label for="authorize">&nbsp;Acepto</label>
+          </div>
+          <p><input type="submit" value="Guardar" class="form-submit-btn" /></p>
+        </form>
+        <div class="canvas-3d" id="canvas-3d"></div>
+      </section>
+      <section class="section-main section-clock">
+        <div class="clock-container">
+          <div class="clock-date">
+            <span class="clock-date-day">Sunday</span>
+            <div class="clock-date-numbers">
+              <span class="clock-date-dd-mm">31&nbsp;&nbsp;Dec</span>
+              <span class="clock-date-yyyy">1990</span>
+            </div>
+          </div>
+          <div class="clock-time">
+            <p class="clock-time-numbers">23:59</p>
+          </div>
         </div>
-        <div class="form-item">
-          <p>Email:&nbsp;</p>
-          <input
-            type="email"
-            class="form-input-text"
-            name="email_input"
-            required
-          />
-        </div>
-        <p class="disclaimer">
-          Acepto recibir notificaciones sobre cambios en la pagina
-        </p>
-        <div>
-          <input
-            type="checkbox"
-            name="authorize"
-            id="authorize"
-            required
-          /><label for="authorize">&nbsp;Acepto</label>
-        </div>
-        <p><input type="submit" value="Guardar" class="form-submit-btn" /></p>
-      </form>
+      </section>
       <footer>
         <span class="footer">
           Sebastian Silva - Universidad Manuela Beltran - Diseño web</span

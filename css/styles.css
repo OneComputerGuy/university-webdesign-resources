@@ -186,3 +186,15 @@ body {
   color: #fca311;
   border-radius: 1rem;
 }
+
+.form-canvas-section {
+  display: flex;
+  gap: 2rem;
+}
+
+.canvas-3d {
+  width: 500px;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #333;
+}
